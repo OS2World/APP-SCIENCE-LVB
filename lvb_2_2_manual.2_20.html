@@ -1,0 +1,952 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 9">
+<meta name="Originator" content="Microsoft Word 9">
+<link rel="File-List" href="http://bioweb2.pasteur.fr/docs/lvb/lvb_manual_files/filelist.xml">
+<link rel="Edit-Time-Data" href="http://bioweb2.pasteur.fr/docs/lvb/lvb_manual_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>lvb 2.2 manual </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author> db60</o:Author>
+  <o:LastAuthor> db60</o:LastAuthor>
+  <o:Revision>13</o:Revision>
+  <o:TotalTime>52</o:TotalTime>
+  <o:Created>2005-11-01T12:50:00Z</o:Created>
+  <o:LastSaved>2005-11-09T14:27:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>2893</o:Words>
+  <o:Characters>16494</o:Characters>
+  <o:Company> University of St Andrews</o:Company>
+  <o:Lines>137</o:Lines>
+  <o:Paragraphs>32</o:Paragraphs>
+  <o:CharactersWithSpaces>20255</o:CharactersWithSpaces>
+  <o:Version>9.6926</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+a:hover {
+	color: #336600;
+	text-decoration: underline;
+}
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 0 0 0 415 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:18.0pt;
+	font-weight:bold;}
+h2
+	{margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:13.5pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:#4CA54C;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#339933;
+	mso-text-animation:none;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#336666;
+	mso-text-animation:none;
+	text-decoration:none;
+	text-underline:none;
+	text-decoration:none;
+	text-line-through:none;}
+p
+	{margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+code
+	{mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+pre
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";}
+p.regular, li.regular, div.regular
+	{mso-style-name:regular;
+	margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.boldsans, li.boldsans, div.boldsans
+	{mso-style-name:boldsans;
+	margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.smalltext, li.smalltext, div.smalltext
+	{mso-style-name:smalltext;
+	margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:8.5pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.smalltype, li.smalltype, div.smalltype
+	{mso-style-name:smalltype;
+	margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:8.5pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.minortitle, li.minortitle, div.minortitle
+	{mso-style-name:minortitle;
+
+	margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+p.minortitledark, li.minortitledark, div.minortitledark
+	{mso-style-name:minortitledark;
+	margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:#336666;
+	font-weight:bold;}
+p.minortitleplain, li.minortitleplain, div.minortitleplain
+	{mso-style-name:minortitleplain;
+	margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:Verdana;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.lvdtitle, li.lvdtitle, div.lvdtitle
+	{mso-style-name:lvdtitle;
+	margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	color:#663366;
+	font-weight:bold;}
+p.style1, li.style1, div.style1
+	{mso-style-name:style1;
+	margin-right:0pt;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.title1
+	{mso-style-name:title1;
+	mso-ansi-font-size:13.5pt;
+	mso-bidi-font-size:13.5pt;
+	mso-ascii-font-family:Verdana;
+	mso-hansi-font-family:Verdana;
+	color:#4CA54C;
+	font-weight:bold;}
+span.smalltype1
+	{mso-style-name:smalltype1;
+	mso-ansi-font-size:8.5pt;
+	mso-bidi-font-size:8.5pt;
+	mso-ascii-font-family:Verdana;
+	mso-hansi-font-family:Verdana;}
+span.regular1
+	{mso-style-name:regular1;
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	mso-ascii-font-family:Verdana;
+	mso-hansi-font-family:Verdana;
+	font-weight:normal;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:156918449;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1077648866 -1393800974 -724278194 1576335132 -1563146696 1741846524 -1919921920 -670787302 -384391724 1576033388;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:1092244990;
+	mso-list-type:hybrid;
+	mso-list-template-ids:2034683500 -2140631652 -24472410 863638762 -1070804282 -1809145602 -1599318942 -1581208544 -37582380 558139146;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1166440349;
+	mso-list-type:hybrid;
+	mso-list-template-ids:183507606 1808685422 1601991192 2065605292 633079066 717646704 171078046 950052698 -1725279556 1280620404;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3
+	{mso-list-id:1735740446;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1479270602 -1347395146 -71031840 -1452538002 1271971136 -1291811204 -575893848 640713098 -296056844 638714084;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:1803617883;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-332216938 -2134618950 -68408598 -499103486 529690190 509508596 -993477502 1498694378 2112937326 1735673658;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head><body style="" leftmargin="0" topmargin="0" bgcolor="white" vlink="#336666" lang="EN-GB" link="#339933" marginheight="0" marginwidth="0">
+
+<div class="Section1">
+
+<p class="MsoNormal" style="text-align: center;" align="center"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+<div align="center">
+
+<table style="width: 450pt;" border="0" cellpadding="0" cellspacing="4" width="600">
+ <tbody><tr>
+  <td style="padding: 0pt;">
+  <p><span class="title1"><span style="font-size: 13.5pt; font-family: Verdana;">LVB
+  Manual<a name="__index__"></a> &#8211; LVB phylogeny program, version 2.2</span></span>
+  </p>
+  <p><span class="smalltype1"><span style="font-size: 8.5pt; font-family: Verdana;">This
+  manual was last updated on 10 November 2005.</span></span></p>
+  <p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <p class="MsoNormal"><a name="contents"><b><span style="font-family: Arial; color: rgb(102, 51, 102);"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></b></a></p>
+  <p class="MsoNormal"><span style=""><b><span style="font-family: Arial; color: rgb(102, 51, 102);">CONTENTS</span></b></span> </p>
+  <p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <table style="width: 100%;" border="0" cellpadding="0" width="100%">
+   <tbody><tr>
+    <td style="padding: 1.5pt; width: 21%;" valign="top" width="21%">
+    <ul type="disc">
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#copyright">COPYRIGHT</a><o:p></o:p></span></b></li>
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#description">DESCRIPTION</a><o:p></o:p></span></b></li>
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#citing%20lvb">CITING
+         LVB</a><o:p></o:p></span></b></li>
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#running%20lvb">RUNNING
+         LVB</a><o:p></o:p></span></b></li>
+     <ul type="circle">
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#windows">Windows</a><o:p></o:p></span></b></li>
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#macos%20x">MacOS
+          X</a><o:p></o:p></span></b></li>
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#linux">Linux</a><o:p></o:p></span></b></li>
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#unix">Unix</a><o:p></o:p></span></b></li>
+     </ul>
+    </ul>
+    </td>
+    <td style="padding: 1.5pt; width: 26%;" valign="top" width="26%">
+    <ul type="disc">
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#input">INPUT</a><o:p></o:p></span></b></li>
+     <ul type="circle">
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#keyboard%20%28standard%20input%29">Keyboard (standard input)</a><o:p></o:p></span></b></li>
+      <ul type="square">
+       <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#matrix%20format">Matrix
+           format</a><o:p></o:p></span></b></li>
+       <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#treatment%20of%20gaps">Treatment of gaps</a><o:p></o:p></span></b></li>
+       <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#random%20number%20seed">Random number seed</a><o:p></o:p></span></b></li>
+       <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#duration%20of%20the%20analysis">Duration of the analysis</a><o:p></o:p></span></b></li>
+       <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#bootstrapping">Bootstrapping</a><o:p></o:p></span></b></li>
+      </ul>
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#infile">infile</a><o:p></o:p></span></b></li>
+      <ul type="square">
+       <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#layout">Layout</a><o:p></o:p></span></b></li>
+       <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#bases">Bases</a><o:p></o:p></span></b></li>
+      </ul>
+     </ul>
+    </ul>
+    </td>
+    <td style="padding: 1.5pt; width: 53%;" valign="top" width="53%">
+    <ul type="disc">
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#output">OUTPUT</a><o:p></o:p></span></b></li>
+     <ul type="circle">
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#screen">Screen (standard output)</a><o:p></o:p></span></b></li>
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#outtree">outtree<br>
+          </a><o:p></o:p></span></b></li>
+     </ul>
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#compiling%20lvb">COMPILING
+         LVB</a><o:p></o:p></span></b></li>
+     <ul type="circle">
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#unpacking">Unpacking the source code</a><o:p></o:p></span></b></li>
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#compiler_flags">Compiler flags</a><o:p></o:p></span></b></li>
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#compilation">Compilation</a><o:p></o:p></span></b></li>
+      <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#documentation">Documentation</a><o:p></o:p></span></b></li>
+     </ul>
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#bioinformatics">BIOINFORMATICS
+         APPLICATIONS</a><o:p></o:p></span></b></li>
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#support">SUPPORT
+         AND REGISTRATION</a><o:p></o:p></span></b></li>
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#acknowledgements">ACKNOWLEDGEMENTS</a><o:p></o:p></span></b></li>
+     <li class="MsoNormal" style="margin-bottom: 4pt;"><b><span style="font-size: 9pt; font-family: Verdana;"><a href="#see%20also">SEE
+         ALSO</a><o:p></o:p></span></b></li>
+    </ul>
+    </td>
+   </tr>
+  </tbody></table>
+<!-- INDEX BEGIN -->
+  <p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <p class="MsoNormal"><a name="copyright"><b><span style="font-family: Arial; color: rgb(102, 51, 102);"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></b></a></p>
+  <p class="MsoNormal"><span style=""><b><span style="font-family: Arial; color: rgb(102, 51, 102);">COPYRIGHT</span></b></span> </p>
+  <p class="regular">Part of this document is based on PHYLIP documentation (see <a href="#acknowledgements">ACKNOWLEDGEMENTS</a>).</p>
+  <p class="regular">The PHYLIP component of this document:</p>
+  <p class="regular">© Copyright 1986-2000 by the University of Washington.
+  Permission is granted to copy this document provided that no fee is charged
+  for it and that this copyright notice is not removed.</p>
+  <p class="regular">The remainder of this document:</p>
+  <p class="regular">© Copyright 2003, 2004, 2005 by Daniel Barker. Permission is
+  granted to copy this document provided that no fee is charged for it and that
+  this copyright notice is not removed.</p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <p><a name="description"><b><span style="font-family: Arial; color: rgb(102, 51, 102);">DESCRIPTION</span></b></a>
+  </p>
+  <p class="regular"><strong>lvb</strong> seeks parsimonious trees from an
+  aligned nucleotide data matrix. It uses a simulated annealing heuristic
+  search. In contrast to the more usual heuristic searches (stepwise addition
+  and/or hill-climbing), simulated annealing can 'jump out' of local optima.
+  Especially with large, complex data matrices, the simulated annealing
+  heuristic may run faster and/or find a shorter tree.</p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <h1><a name="citing lvb"><span style="font-size: 12pt; font-family: Arial; color: rgb(102, 51, 102);">CITING LVB</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h1>
+  <p class="regular">Please cite the following paper if you use LVB:</p>
+  <p class="regular">Barker, D. 2004. LVB: Parsimony and simulated annealing in
+  the search for phylogenetic trees. <i>Bioinformatics</i>, <b>20</b>, 274-275.</p>
+  <p class="MsoNormal">The following may also be relevant:</p>
+  <p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <p class="MsoNormal">Barker, D. 1997. <i>LVB 1.0: Reconstructing Evolution with
+  Parsimony and Simulated Annealing</i> (Edinburgh: Daniel Barker)</p>
+  <p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <p class="MsoNormal">Barker, D. 1999. <i>Simulated annealing in the Search for
+  Phylogenetic Trees</i>. PhD Thesis, University of Edinburgh.</p>
+  <p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <h1><a name="running lvb"><span style="font-size: 12pt; font-family: Arial; color: rgb(102, 51, 102);">RUNNING LVB</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h1>
+  <p class="regular"><strong>lvb</strong> is a command-line program.</p>
+  <p class="regular"><strong>lvb</strong> reads the alignment file from the
+  current directory (folder) and writes its main output to a file in the
+  current directory. The user is prompted for the matrix format, the
+  approximate time to run, the interpretation of gaps in the alignment and
+  whether bootstrap replicates are required. Answers are entered using the
+  keyboard. <strong>lvb</strong> logs progress information and errors to the
+  screen.</p>
+  <h2><a name="windows"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Windows</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular">After downloading, copy <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb.exe</span></code> from the zipfile <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb_2_2_windows.zip</span></code>.
+  Once this is done, you may launch it from the MS-DOS command prompt. If <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb.exe</span></code> is
+  in the current directory or a directory in your <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">PATH</span></code> environment variable, it
+  will be accessible from any location as <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb</span></code>.</p>
+  <p class="regular">Do not launch <strong>lvb</strong> for Windows by
+  double-clicking it. It will run, but the window will vanish on completion.
+  You will not see the final tree length, which is output to the screen just
+  before <strong>lvb</strong> exits. You will also fail to see any error
+  messages.</p>
+  <h2><a name="macos x"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">MacOS X</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular">After downloading, extract <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb</span></code> from the file <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb_2_2_macos.tar.gz</span></code>.
+  Once this is done, you may launch it from the Terminal command-line. Terminal
+  is usually found in the <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Applications/Utilities</span></code>
+  folder. If <strong>lvb</strong> is on your desktop, you may launch it by
+  typing the following commands in Terminal:</p>
+  <pre><span style="font-size: 9pt; font-family: Verdana;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></pre><pre><code>cd Desktop<o:p></o:p></code></pre><pre><code>./lvb</code><span style="font-size: 9pt; font-family: Verdana;"><o:p></o:p></span></pre>
+  <p class="regular" style="">If
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb</span></code>
+  is in a directory in your <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">PATH</span></code> environment variable, it should be
+  accessible in Terminal from any location, as <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb</span></code>.</p>
+  <h2 style=""><a name="linux"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Linux</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style="">After
+  downloading, extract <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb</span></code>
+  from the file <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb_2_2_linux.tar.gz</span></code>
+  as follows:</p>
+  <pre><code>tar xzvf lvb_2_2_linux.tar</code><span style="font-size: 9pt; font-family: Verdana;"><o:p></o:p></span></pre>
+  <p class="regular" style=""><strong>lvb</strong>
+  may be launched from a command-line, for example <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">xterm</span></code> or a
+  remote connection (<code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">ssh</span></code>
+  or <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">telnet</span></code>).
+  If <strong>lvb</strong> is in your current directory, it should be accessible
+  as <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">./lvb</span></code>.
+  If it is in a directory on your <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">PATH</span></code> environment variable, it should
+  be accessible from any location as <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb</span></code>.</p>
+  <h2 style=""><a name="unix"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Unix</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style="">After
+  downloading, compile <strong>lvb</strong> from the source code (see <a href="#compiling%20lvb">COMPILING LVB</a>). Once this is done, it may be
+  launched as for <a href="#linux">Linux</a>.</p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <h1 style=""><a name="input"><span style="font-size: 12pt; font-family: Arial; color: rgb(102, 51, 102);">INPUT</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h1>
+  <h2 style=""><a name="keyboard (standard input)"><span style="font-size: 9pt; font-family: Verdana;">Keyboard (standard input)</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style="">Keyboard
+  input is case-independent. So, for example, where the instructions below
+  suggest you type <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">I</span></code>,
+  typing <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">i</span></code>
+  will have the same effect.</p>
+  <h3 style=""><a name="matrix format"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Matrix format</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h3>
+  <p class="regular" style=""><strong>lvb</strong>
+  can read matrices in PHYLIP 3.6 <em>interleaved</em> or PHYLIP 3.6 <em>sequential</em>
+  format. These are described in the section on <a href="#infile">infile</a>.</p>
+  <p class="regular" style="">When
+  prompted for the data matrix format, type <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">I</span></code> or <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">S</span></code> followed by <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">RETURN</span></code> for
+  'interleaved' or 'sequential', respectively.</p>
+  <h3 style=""><a name="treatment of gaps"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Treatment of gaps</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h3>
+  <p class="regular" style="">See
+  the the table under <a href="#bases">Bases</a> for a list of base codes
+  allowed by <strong>lvb</strong>.</p>
+  <p class="regular" style="">A
+  gap represented by the letter '<code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">O</span></code>' in the data matrix is always
+  treated as a character state in its own right (fifth state). <strong>lvb</strong>
+  can treat gaps represented by '<code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">-</span></code>' in either of the following ways:</p>
+  <p class="MsoNormal" style=""><a name="item_Fifth_state"><strong><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Fifth state</span></strong></a></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">'</span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">-</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">' is treated
+  as equivalent to '</span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">O</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">'.<o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <p class="MsoNormal" style=""><a name="item_Unknown"><strong><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Unknown</span></strong></a></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">'</span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">-</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">' is treated
+  as equivalent to '</span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">?</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">', i.e., as an ambiguous site
+  that may contain '</span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">A</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">' or '</span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">C</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">' or '</span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">G</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">' or '</span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">T</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">' or '</span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">O</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">'. </span></span></p>
+  <p class="regular" style="">When
+  prompted for the treatment of '<code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">-</span></code>', type <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">U</span></code> or <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">F</span></code> followed
+  by <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">RETURN</span></code>
+  for 'unknown' or 'fifth state', respectively.</p>
+  <p class="regular" style="">'Fifth
+  state' may give excessive weight to multi-site gaps, since each affected base
+  position will be counted as one event.</p>
+  <h3 style=""><a name="random number seed"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Random number seed</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h3>
+  <p class="regular" style="">When
+  prompted for the random number seed, press <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">RETURN</span></code> for the default or enter an
+  integer in the range 0 to 900000000 inclusive.</p>
+  <p class="regular" style="">The
+  default value is taken from the system clock and hence will vary from one
+  analysis to the next, changing every second. The default is usually
+  appropriate.</p>
+  <h3 style=""><a name="duration of the analysis"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Duration of the analysis</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h3>
+  <p class="regular" style="">When
+  prompted for the duration of the analysis, type <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">F</span></code> or <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">S</span></code> followed
+  by <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">RETURN</span></code>
+  for 'fast' or 'slow', respectively.</p>
+  <p class="regular" style="">A
+  slow analysis examines more trees and might find a shorter tree than a fast
+  analysis, which cuts corners to get a result more quickly. The difference in
+  quality of results is most marked for large data matrices.</p>
+  <p class="regular" style="">LVB
+  uses a stochastic search for the most parsimonious tree and might not always
+  give exactly the same results for the same input. If results differ markedly
+  between repeat analyses, this is an indication that the search is too fast.
+  If using a fast search, switch to using a slow search if time permits. The
+  overall effect of such variation may be less if you seek a bootstrap sample of
+  trees (see <a href="#bootstrapping">Bootstrapping</a>) rather than the most
+  parsimonious tree(s) for the original data.</p>
+  <p class="regular" style="">The
+  duration of the analysis is only approximate. Also, all analyses become
+  slower for larger data matrices.</p>
+  <h3 style=""><a name="bootstrapping"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Bootstrapping</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h3>
+  <p class="regular" style="">When
+  prompted for the number of bootstrap replicates, enter the number of
+  replicates required. If bootstrapping is not required, enter the number 0 or
+  just press <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">RETURN</span></code>.</p>
+  <p class="regular" style=""><strong>lvb</strong>
+  allows any number of replicates from 1 to 1000000 inclusive. For each
+  replicate, a bootstrap sample of sites in the alignment is generated and
+  analyzed.</p>
+  <p class="regular" style="">For
+  an alignment matrix of <em>m</em> sites, each bootstrap replicate contains <em>m</em>
+  sites, randomly sampled with replacement from the originals. Compared to the
+  original alignment, it is likely that some sites are left out, some are
+  present once, and others are present twice or more. In <strong>lvb</strong>
+  the probability of including a site is equal for all sites, irrespective of
+  whether the site varies or is constant.</p>
+  <p class="regular" style="">The
+  most parsimonious tree(s) for each replicate are output. There will be at
+  least one tree for each replicate. If the search for any replicate found more
+  than one equally parsimonious tree, all are output and the number of trees
+  will exceed the number of replicates.</p>
+  <h2 style=""><a name="infile"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">infile</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style="">The
+  data matrix must be in a file called <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">infile</span></code>. <strong>lvb</strong> expects
+  this file to contain a single nucleotide matrix in PHYLIP 3.6 format.</p>
+  <h3 style=""><a name="layout"><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;">Layout</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h3>
+  <p class="regular" style="">The
+  simplest type of data matrix file looks something like this:</p>
+  <pre><span style="font-size: 9pt; font-family: Verdana;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></pre><pre><code><span style="">&nbsp;&nbsp; </span>6<span style="">&nbsp;&nbsp; </span>13<o:p></o:p></code></pre><pre><code>Archaeopt CGATGCTTAC CGC<o:p></o:p></code></pre><pre><code>HesperorniCGTTACTCGT TGT<o:p></o:p></code></pre><pre><code>BaluchitheTAATGTTAAT TGT<o:p></o:p></code></pre><pre><code>B. virginiTAATGTTCGT TGT<o:p></o:p></code></pre><pre><code>BrontosaurCAAAACCCAT CAT<o:p></o:p></code></pre><pre><code>B.subtilisGGCAGCCAAT CAC</code><span style="font-size: 9pt; font-family: Verdana;"><o:p></o:p></span></pre>
+  <p class="regular" style="">The
+  first line of the input file contains the number of sequences and the number
+  of characters (sites). These are in free format, separated by blanks. The information
+  for each sequence follows, starting with a ten-character sequence name (which
+  can include blanks and some punctuation marks), and continuing with the
+  characters for that sequence.</p>
+  <p class="regular" style="">The
+  name should come right at the start of the line, without any preceding blanks
+  or tabs. It should be ten characters in length, filled out to the full ten
+  characters by trailing blanks if shorter. Any printable ASCII/ISO character
+  is allowed in the name, except for parentheses '(' and ')', square brackets
+  '[' and ']', colon ':', semicolon ';' and comma ','. If you forget to extend
+  the names to ten characters in length by blanks, an error message will
+  result.</p>
+  <p class="regular" style="">The
+  biological characters (bases or gaps) are each a single ASCII character,
+  sometimes separated by blanks.</p>
+  <p class="regular" style="">The
+  sequences can continue over multiple lines. When this is done the sequences
+  must be either in <em>interleaved</em> format or <em>sequential</em> format.
+  In sequential format all of one sequence is given, possibly on multiple
+  lines, before the next starts. In interleaved format the first part of the
+  file should contain the first part of each of the sequences, then possibly a
+  line containing nothing but a carriage-return character, then the second part
+  of each sequence, and so on. Only the first parts of the sequences should be
+  preceded by names. The name must be on the same line as the first character
+  of the data for that sequence. Here is a hypothetical example of interleaved
+  format:</p>
+  <pre><span style="font-size: 9pt; font-family: Verdana;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></pre><pre><code><span style="">&nbsp; </span>5<span style="">&nbsp;&nbsp;&nbsp; </span>42<o:p></o:p></code></pre><pre><code>Turkey<span style="">&nbsp;&nbsp;&nbsp; </span>AAGCTNGGGC ATTTCAGGGT<o:p></o:p></code></pre><pre><code>Salmo gairAAGCCTTGGC AGTGCAGGGT<o:p></o:p></code></pre><pre><code>H. SapiensACCGGTTGGC CGTTCAGGGT<o:p></o:p></code></pre><pre><code>Chimp<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>AAACCCTTGC CGTTACGCTT<o:p></o:p></code></pre><pre><code>Gorilla<span style="">&nbsp;&nbsp; </span>AAACCCTTGC CGGTACGCTT<o:p></o:p></code></pre><pre><code>GAGCCCGGGC AATACAGGGT AT<o:p></o:p></code></pre><pre><code>GAGCCGTGGC CGGGCACGGT AT<o:p></o:p></code></pre><pre><code>ACAGGTTGGC CGTTCAGGGT AA<o:p></o:p></code></pre><pre><code>AAACCGAGGC CGGGACACTC AT<o:p></o:p></code></pre><pre><code>AAACCATTGC CGGTACGCTT AA</code><span style="font-size: 9pt; font-family: Verdana;"><o:p></o:p></span></pre>
+  <p class="regular" style="">while
+  in sequential format the same sequences would be:</p>
+  <pre><span style="font-size: 9pt; font-family: Verdana;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></pre><pre><code><span style="">&nbsp; </span>5<span style="">&nbsp;&nbsp;&nbsp; </span>42<o:p></o:p></code></pre><pre><code>Turkey<span style="">&nbsp;&nbsp;&nbsp; </span>AAGCTNGGGC ATTTCAGGGT<o:p></o:p></code></pre><pre><code>GAGCCCGGGC AATACAGGGT AT<o:p></o:p></code></pre><pre><code>Salmo gairAAGCCTTGGC AGTGCAGGGT<o:p></o:p></code></pre><pre><code>GAGCCGTGGC CGGGCACGGT AT<o:p></o:p></code></pre><pre><code>H. SapiensACCGGTTGGC CGTTCAGGGT<o:p></o:p></code></pre><pre><code>ACAGGTTGGC CGTTCAGGGT AA<o:p></o:p></code></pre><pre><code>Chimp<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>AAACCCTTGC CGTTACGCTT<o:p></o:p></code></pre><pre><code>AAACCGAGGC CGGGACACTC AT<o:p></o:p></code></pre><pre><code>Gorilla<span style="">&nbsp;&nbsp; </span>AAACCCTTGC CGGTACGCTT<o:p></o:p></code></pre><pre><code>AAACCATTGC CGGTACGCTT AA</code><span style="font-size: 9pt; font-family: Verdana;"><o:p></o:p></span></pre>
+  <p class="regular" style="">If
+  each sequence only occupies one line in the matrix file, there is no
+  difference between sequential and interleaved format and <strong>lvb</strong>
+  can read the file in either way. Other than this special case, it is important
+  not to read an interleaved matrix as sequential or a sequential matrix as
+  interleaved. A <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">BAD
+  BASE</span></code> error message often indicates that the wrong format has
+  been specified.</p>
+  <p class="regular" style="">Note
+  that a portion of a sequence like this:</p>
+  <pre><span style="font-size: 9pt; font-family: Verdana;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></pre><pre><code>300 AAGCGTGAAC GTTGTACTAA TRCAG<o:p></o:p></code></pre>
+  <p class="regular" style="">is
+  perfectly legal, assuming that the sequence name has gone before and is
+  filled out to full length by blanks. The above digits and blanks will be
+  ignored, the sequence being taken as starting at the first base symbol (in
+  this case an A). This should enable you to use output from many
+  multiple-sequence alignment programs with only minimal editing.</p>
+  <p class="regular" style=""><b>lvb</b>
+  may have difficultires with spaces at the end of lines. The symptoms of this
+  problem are that <b>lvb</b> complains about a <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">BAD BASE</span></code>, and you can find no
+  other cause for this complaint. The problem may be avoided by deleting any
+  spaces at the end of lines.</p>
+  <p class="regular" style="">In
+  interleaved format the present version of <strong>lvb</strong> may sometimes
+  have difficulties with the blank lines between groups of lines, and if so you
+  might want to retype those lines, making sure that they have only a
+  carriage-return and no blank characters on them, or you may perhaps have to
+  eliminate them. The symptoms of this problem are that <strong>lvb</strong>
+  complains that the sequences are not properly aligned, and you can find no
+  other cause for this complaint.</p>
+  <h3 style=""><a name="bases"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Bases</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h3>
+  <p class="regular" style="">The
+  sequences may contain A's, G's, C's and T's (or U's, which <strong>lvb</strong>
+  treats as equivalent to T's). Each ASCII character in the sequence must be
+  one of the letters <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">A</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">B</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">C</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">D</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">G</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">H</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">K</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">M</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">N</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">O</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">R</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">S</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">T</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">U</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">V</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">W</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">X</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Y</span></code>,
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">?</span></code>,
+  or <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">-</span></code>
+  (a period is not allowed, because it is used in different senses in different
+  programs). Blanks will be ignored, and so will numerical digits.</p>
+  <p class="regular" style="">These
+  characters can be either upper or lower case, because the algorithms convert
+  all input characters to upper case (which is how they are treated). The
+  characters constitute the IUPAC (IUB) nucleic acid code plus some slight
+  extensions. They enable input of nucleic acid sequences taking full account
+  of any ambiguities in the sequence.</p>
+  <p class="regular" style="">For
+  further information on '<code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">-</span></code>',
+  See <a href="#treatment%20of%20gaps">Treatment of gaps</a>.</p>
+  <pre><span style="font-size: 9pt; font-family: Verdana;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></pre><pre><code>Symbol: Meaning:<o:p></o:p></code></pre><pre><code><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></code></pre><pre><code>A<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Adenine<o:p></o:p></code></pre><pre><code>G<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Guanine<o:p></o:p></code></pre><pre><code>C<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Cytosine<o:p></o:p></code></pre><pre><code>T<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Thymine<o:p></o:p></code></pre><pre><code>U<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Uracil<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(treated as T by lvb)<o:p></o:p></code></pre><pre><code>Y<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>pYrimidine<span style="">&nbsp; </span>(C or T)<o:p></o:p></code></pre><pre><code>R<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>puRine<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(A or G)<o:p></o:p></code></pre><pre><code>W<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>'Weak'<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(A or T)<o:p></o:p></code></pre><pre><code>S<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>'Strong'<span style="">&nbsp;&nbsp;&nbsp; </span>(C or G)<o:p></o:p></code></pre><pre><code>K<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>'Keto'<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(T or G)<o:p></o:p></code></pre><pre><code>M<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>'aMino'<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>(C or A)<o:p></o:p></code></pre><pre><code>B<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>not A<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(C or G or T)<o:p></o:p></code></pre><pre><code>D<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>not C<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(A or G or T)<o:p></o:p></code></pre><pre><code>H<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>not G<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(A or C or T)<o:p></o:p></code></pre><pre><code>V<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>not T<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(A or C or G)<o:p></o:p></code></pre><pre><code>N<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>aNy base<span style="">&nbsp;&nbsp;&nbsp; </span>(A or C or G or T)<o:p></o:p></code></pre><pre><code>X<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>any base<span style="">&nbsp;&nbsp;&nbsp; </span>(A or C or G or T)<o:p></o:p></code></pre><pre><code>?<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>unknown<span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>(A or C or G or T or O)<o:p></o:p></code></pre><pre><code>O<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>gap<o:p></o:p></code></pre><pre><code>-<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>gap<span style="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(O; alternatively, A or C or G or T or O)</code><span style="font-size: 9pt; font-family: Verdana;"><o:p></o:p></span></pre>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <h1 style=""><a name="output"><span style="font-size: 12pt; font-family: Arial; color: rgb(102, 51, 102);">OUTPUT</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h1>
+  <h2 style=""><a name="screen"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">Screen (standard output)</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style=""><strong>lvb</strong>
+  logs its version, details of the analysis, indication of progress and any
+  errors encountered to the standard output, which is usually the screen.</p>
+  <p class="regular" style="">Without
+  bootstrapping, the rearrangement number (iteration) of the search and current
+  tree length is logged every 10000 trees and every time tree length changes.
+  During simulated annealing, the tree length can go up as well as down. LVB
+  keeps and outputs the shortest trees encountered at any point during the
+  search. The length of this tree or trees is logged to the screen near end of
+  the analysis.</p>
+  <p class="regular" style="">With
+  bootstrapping, the replicate number is logged, along with the number of
+  rearrangements tries, the number of trees found and length of trees found for
+  that replicate.</p>
+  <h2 style=""><a name="outtree"><span style="font-size: 9pt; font-family: Verdana; color: rgb(51, 102, 102);">outtree</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style="">Without
+  bootstrapping, the file <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">outtree</span></code>
+  contains the most parsimonious tree or trees found.</p>
+  <p class="regular" style="">With
+  bootstrapping, <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">outtree</span></code>
+  contains the most parsimonious tree or trees found for each replicate.
+  Results for the replicates are given in order so, for example, if 40 trees
+  were found for the first replicate, these are the first 40 trees in <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">outtree</span></code>.</p>
+  <p class="regular" style="">Trees
+  use a subset of the 'Newick standard' tree format. This is accepted by many
+  other programs.</p>
+  <p class="regular" style="">Trees
+  may be converted to graphics files using the <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">drawtree</span></code> program of the
+  PHYLIP package. They may also be viewed and printed using TreeView.</p>
+  <p class="regular" style="">Without
+  bootstrapping, if more than one equally parsimonious tree is found, these may
+  be combined in various ways using <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">consense</span></code> in the PHYLIP package. With
+  bootstrapping, <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">consense</span></code>
+  is useful to generate the majority rule consensus tree.</p>
+  <p class="regular" style="">Output
+  trees are unrooted and branch lengths are not given. Trees may be rooted with
+  the <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">retree</span></code>
+  program of the PHYLIP package. Trees may also be rooted and branch lengths
+  (under various models of character state change) may be obtained by importing
+  the tree and data matrix into Mesquite or MacClade.</p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <h1 style=""><a name="compiling lvb"><span style="font-size: 12pt; font-family: Arial; color: rgb(102, 51, 102);">COMPILING LVB</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h1>
+  <p class="regular" style="">Compiling
+  <strong>lvb</strong> is rarely necessary, because <strong>lvb</strong> is
+  available at the LVB Web page as ready-to-run software for the following
+  platforms:</p>
+  <ul type="disc">
+   <li class="MsoNormal" style=""><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">Windows;
+       </span></span></li>
+   <li class="MsoNormal" style=""><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">MacOS
+       X; </span></span></li>
+   <li class="MsoNormal" style=""><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">Linux on
+       Pentium (or compatible) hardware. </span></span></li>
+  </ul>
+  <p class="regular" style="">However,
+  for other platforms, or if you wish to modify the source code, you will have
+  to compile <strong>lvb</strong>.</p>
+  <p class="regular" style="">Assuming
+  your system is UNIX-like, uses GNU <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">make</span></code> and has Perl installed, follow
+  the instructions below.</p>
+  <h2 style=""><a name="unpacking"><span style="font-size: 9pt; font-family: Verdana;">Unpacking the source code</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style="">Assuming
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb_2_2_source.tar.gz</span></code>
+  is in the current directory, enter the following commands:</p>
+  <pre><span style="font-size: 9pt; font-family: Verdana;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></pre><pre><code><span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>gunzip lvb_2_2_source.tar<o:p></o:p></code></pre><pre><code><span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>tar xfv lvb_2_2_source.tar<o:p></o:p></code></pre>
+  <p class="regular" style="">This
+  gives you a main directory <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb_2_2</span></code> with two subdirectories, <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">LVB_MAIN</span></code> and
+  <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">PHYLIP_FOR_LVB</span></code>.</p>
+  <h2 style=""><a name="compiler_flags"><span style="font-size: 9pt; font-family: Verdana;">Compiler
+  flags</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style="">First,
+  edit the file <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">LVB_MAIN/Makefile</span></code>
+  so it uses suitable compiler options. See Section <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Compiler-dependent options</span></code>
+  in that file, and either un-comment one of the lines given, or add one of
+  your own.</p>
+  <h2 style=""><a name="compilation"><span style="font-size: 9pt; font-family: Verdana;">Compilation</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style="">Now,
+  assuming you begin in the <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb_2_2</span></code> directory, the following sequence of
+  commands will build <strong>lvb</strong> and test it:</p>
+  <pre><span style="font-size: 9pt; font-family: Verdana;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></span></pre><pre><code><span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>cd LVB_MAIN<o:p></o:p></code></pre><pre><code><span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>make<o:p></o:p></code></pre><pre><code><span style="">&nbsp;&nbsp;&nbsp;&nbsp; </span>make tests</code><span style="font-size: 9pt; font-family: Verdana;"><o:p></o:p></span></pre>
+  <p class="regular" style="">Results
+  of the above commands are:</p>
+  <ul type="disc">
+   <li class="MsoNormal" style=""><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">A
+       report on the tests, which is sent to the screen. All tests should pass.
+       Any failure may indicate that </span></span><strong><span style="font-size: 9pt; font-family: Verdana;">lvb</span></strong><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;"> won't
+       work properly on your system. </span></span></li>
+   <li class="MsoNormal" style=""><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">A
+       stand-alone executable file, </span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">. This is all that is
+       required to run the program. </span></span></li>
+   <li class="MsoNormal" style=""><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;">Internal
+       documention of the LVB program, consisting of HTML files in the
+       directory </span></span><code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">docs_programmer</span></code><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;"> (see below). </span></span></li>
+  </ul>
+  <p class="regular" style="">After
+  changing the source code or <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">Makefile</span></code>, it is safer to always make again from
+  scratch.</p>
+  <h2 style=""><a name="documentation"><span style="font-size: 9pt; font-family: Verdana;">Documentation</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h2>
+  <p class="regular" style="">The
+  main documentation (i.e. this file) is <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">lvb_manual.htm</span></code> in the <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">LVB_MAIN</span></code>
+  directory.</p>
+  <p class="regular" style="">Internal
+  documentation will be of interest to people who wish to modify or re-use the
+  source code of LVB. During a successful build, documentation in <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">docs_programmer/</span></code>
+  is automatically extracted from POD-format comments within the LVB source
+  code. The internal documentation is slightly incomplete.</p>
+  <p class="regular" style="">Documentation
+  of PHYLIP code within LVB is given separately, in <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">PHYLIP_FOR_LVB/README_phylip_code_in_lvb.rtf</span></code>.
+  This PHYLIP code should not be used to build PHYLIP itself, as it contains
+  modifications specifically for LVB. PHYLIP proper may be built by downloading
+  its source code from the PHYLIP Web page.</p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <h1 style=""><a name="bioinformatics"><span style="font-size: 12pt; font-family: Arial; color: rgb(102, 51, 102);">BIOINFORMATICS APPLICATIONS</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h1>
+  <p class="regular" style="">For
+  automated use of <strong>lvb</strong>, a 'wrapper' in the Perl language may
+  be used. This is <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">LVB.pm</span></code>,
+  written by Daniel Barker. <code><span style="font-size: 10pt; font-family: &quot;Courier New&quot;;">LVB.pm</span></code> is documented and freely available
+  separately, as part of the BioPerl library. </p>
+  <p class="regular"><code><span style="">LVB.pm</span></code> allows one to
+  configure and execute LVB as if it were an object-oriented Perl method. This
+  is particularly useful for repeated analyses, and one may integrate the
+  analysis with use of other software such as BLAST and CLUSTAL-W. </p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <h1 style=""><a name="support"><span style="font-size: 12pt; font-family: Arial; color: rgb(102, 51, 102);">SUPPORT
+  AND REGISTRATION</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h1>
+  <p class="regular">Please send questions and bug reports to: <a href="mailto:db60@st-and.ac.uk">db60@st-and.ac.uk</a> </p>
+  <p class="regular">To be placed on an email list to receive information on new
+  versions, please email<br>
+  <a href="mailto:db60@st-and.ac.uk">db60@st-and.ac.uk</a> with subject
+  "Register as LVB user".</p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <h1 style=""><a name="acknowledgements"><span style="font-size: 12pt; font-family: Arial; color: rgb(102, 51, 102);">ACKNOWLEDGEMENTS</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h1>
+  <p class="regular" style=""><strong>lvb</strong>
+  contains portions of PHYLIP 3.6a. This allows <strong>lvb</strong> to read
+  PHYLIP-format matrix files. Also, most of the above documentation for <a href="#infile">infile</a> is taken from the PHYLIP 3.6a manual. I wish to
+  thank Joe Felsenstein for making PHYLIP freely available, and for advising on
+  how to re-use it in <strong>lvb</strong>.</p>
+  <div class="MsoNormal" style="text-align: center;" align="center">
+  <hr align="center" size="2" width="100%">
+  </div>
+  <h1 style=""><a name="see also"><span style="font-size: 12pt; font-family: Arial; color: rgb(102, 51, 102);">SEE
+  ALSO</span></a><span style="font-size: 9pt; font-family: Verdana; font-weight: normal;"><o:p></o:p></span></h1>
+  <p class="MsoNormal" style=""><a name="item_LVB_Web_page"><strong><span style="font-size: 9pt; font-family: Verdana;">LVB Web page</span></strong></a></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;"><a href="http://biology.st-andrews.ac.uk/cegg/lvb.htm">http://biology.st-andrews.ac.uk/cegg/lvb.htm</a><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <p class="MsoNormal" style=""><a name="item_PHYLIP"><strong><span style="font-size: 9pt; font-family: Verdana;">PHYLIP</span></strong></a></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;"><a href="http://evolution.genetics.washington.edu/phylip.html">http://evolution.genetics.washington.edu/phylip.html</a><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <p class="MsoNormal" style=""><a name="item_MacClade"><strong><span style="font-size: 9pt; font-family: Verdana;">MacClade</span></strong></a></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;"><a href="http://phylogeny.arizona.edu/macclade/macclade.html">http://phylogeny.arizona.edu/macclade/macclade.html</a><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style=""><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <p class="MsoNormal" style=""><a name="item_Mesquite"><strong><span style="font-size: 9pt; font-family: Verdana;">Mesquite</span></strong></a></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;"><a href="http://mesquiteproject.org/mesquite/mesquite.html">http://mesquiteproject.org/mesquite/mesquite.html</a><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style=""><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <p class="MsoNormal" style=""><a name="item_Treeview"><strong><span style="font-size: 9pt; font-family: Verdana;">Treeview</span></strong></a></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;"><a href="http://taxonomy.zoology.gla.ac.uk/software.html">http://taxonomy.zoology.gla.ac.uk/software.html</a><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <p class="MsoNormal" style=""><a name="item_BioPerl"><strong><span style="font-size: 9pt; font-family: Verdana;">BioPerl</span></strong></a></p>
+  <p class="MsoNormal" style="margin-left: 36pt;"><span class="regular1"><span style="font-size: 9pt; font-family: Verdana;"><a href="http://www.bioperl.org/">http://www.bioperl.org</a><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style=""><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  <p style="">&nbsp;<o:p></o:p></p>
+<!-- End ImageReady Slices 
+-->
+  <p class="style1" style=""><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div>
+
+<p class="MsoNormal"><!--[if !supportEmptyParas]-->&nbsp;<!--[endif]--><o:p></o:p></p>
+
+</div>
+
+</body></html>

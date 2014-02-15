@@ -1,0 +1,20 @@
+This is the OS/2 port of LVB, a bio-informatic application.
+
+LVB makes heuristic searches on parsimonious trees from an aligned nucleotide data matrix.
+
+For more informations please consult the HTML documentation herein.
+
+I ported this application on OS/2 (eComStation 2.0) with GCC 4.5.2 and the
+build environment from Paul Smedley. If you find this program interesting or useful,
+please consider making a donation to Paul.
+
+The executable program is into the exe/ subdirectory. I included the sources for
+completeness, so if you want, you can compile LVB with other build environments.
+
+Please note that, since GCC 4.5.2 can't compile X applications, I didn't port the
+sources contained in the PHYLIP_FOR_LVB subdirectory.
+
+Have fun
+Mentore Siesto
+Pisa, Italy
+mentore.siesto@alice.it

@@ -1,0 +1,135 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>parsim.c - tree evaluation</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:paul@smedley.info" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#getplen__calculate_tree_length">getplen - CALCULATE TREE LENGTH</a></li>
+	<ul>
+
+		<li><a href="#synopsis">SYNOPSIS</a></li>
+		<li><a href="#description">DESCRIPTION</a></li>
+		<li><a href="#parameters">PARAMETERS</a></li>
+		<ul>
+
+			<li><a href="#input">INPUT</a></li>
+			<li><a href="#output">OUTPUT</a></li>
+		</ul>
+
+		<li><a href="#return">RETURN</a></li>
+	</ul>
+
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>parsim.c - tree evaluation</p>
+<p>Version Tag $Id: parsim.c,v 1.35 2006/02/06 19:55:46 db60 Exp $</p>
+<p>
+</p>
+<hr />
+<h1><a name="getplen__calculate_tree_length">getplen - CALCULATE TREE LENGTH</a></h1>
+<p>
+</p>
+<h2><a name="synopsis">SYNOPSIS</a></h2>
+<pre>
+    long getplen(const Branch *const barray, const long root,
+    unsigned char **bmat, unsigned char **scratch,
+    const long m, const long n, const long *weights);</pre>
+<p>
+</p>
+<h2><a name="description">DESCRIPTION</a></h2>
+<p>Calculates the length of a tree using Fitch parsimony. In LVB, a large
+amount of time is spent in this function.</p>
+<p>
+</p>
+<h2><a name="parameters">PARAMETERS</a></h2>
+<p>
+</p>
+<h3><a name="input">INPUT</a></h3>
+<dl>
+<dt><strong><a name="item_barray">barray</a></strong>
+
+<dd>
+<p>Pointer to the first element of the array containing the tree to be
+evaluated.</p>
+</dd>
+</li>
+<dt><strong><a name="item_root">root</a></strong>
+
+<dd>
+<p>Index of the root of the tree to be evaluated. <a href="#item_barray"><code>barray</code></a>[<a href="#item_root"><code>root</code></a>] is
+the root.</p>
+</dd>
+</li>
+<dt><strong><a name="item_bmat">bmat</a></strong>
+
+<dd>
+<p>Pointer to the first element in an array of pointers, each of which
+points to a row in the binary-encoded data matrix that will be used to
+calculate the length of the tree. <a href="#item_bmat"><code>bmat</code></a>[0..<a href="#item_n"><code>n</code></a>-1] must point to the
+first elements of encoded rows for objects 0..<a href="#item_n"><code>n</code></a>-1 respectively.
+<a href="#item_bmat"><code>bmat</code></a> is not const-qualified, since it is necessarily accessed
+through non-const-qualified pointers.</p>
+</dd>
+</li>
+<dt><strong><a name="item_m">m</a></strong>
+
+<dd>
+<p>The number of columns (bases) in the encoded data matrix.</p>
+</dd>
+</li>
+<dt><strong><a name="item_n">n</a></strong>
+
+<dd>
+<p>The number of objects in the tree, which is also the number of rows
+(objects) in the encoded data matrix.</p>
+</dd>
+</li>
+<dt><strong><a name="item_weights">weights</a></strong>
+
+<dd>
+<p>Pointer to first element of an m-element array giving the weights of
+the sites. For each site, each change is counted the number of times
+given in the corresponding element of this array. For no weighting,
+each element of the array should be 1.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<h3><a name="output">OUTPUT</a></h3>
+<dl>
+<dt><strong><a name="item_scratch">scratch</a></strong>
+
+<dd>
+<p><a href="#item_scratch"><code>scratch</code></a> must point to an array of <a href="#item_n"><code>n</code></a>-2 pointers, each of which
+must point to an allocated <a href="#item_m"><code>m</code></a>-element array of unsigned char. Arrays
+accessible through <a href="#item_scratch"><code>scratch</code></a> are used for temporary storage and have
+meaningless contents on return.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<h2><a name="return">RETURN</a></h2>
+<p>Returns total changes in all characters for the tree accessed through
+<a href="#item_barray"><code>barray</code></a>, according to the data matrix accessed through <a href="#item_bmat"><code>bmat</code></a>.</p>
+
+</body>
+
+</html>

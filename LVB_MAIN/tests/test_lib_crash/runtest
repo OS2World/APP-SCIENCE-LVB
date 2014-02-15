@@ -1,0 +1,20 @@
+# LVB (c) Copyright 2003-2006 by Daniel Barker.
+# Permission is granted to copy and use this program provided that no fee is
+# charged for it and provided that this copyright notice is not removed.
+
+# test for crash().
+
+# run testprog.exe
+$output = `./testprog.exe`;
+$status = $?;
+
+# check output
+if (($output =~ /FATAL ERROR: 32447881 is causing trouble/)
+ && ($status != 0) && ($output !~ /test failed/))
+{
+    print "test passed\n";
+}
+else
+{
+    print "test failed\n";
+}

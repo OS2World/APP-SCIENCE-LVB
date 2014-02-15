@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>go - Run B&lt;lvb&gt; test suite.</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:paul@smedley.info" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#environment">ENVIRONMENT</a></li>
+	<li><a href="#exit_status">EXIT STATUS</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>go - Run <strong>lvb</strong> test suite.</p>
+<p>Version Tag $Id: go,v 1.18 2005/11/01 16:47:46 db60 Exp $</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+    go [--test TESTNAME]</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Perl script to run the <strong>lvb</strong> test suite and display a summary of
+results.</p>
+<p>Tests are assumed to be in subdirectories of the current directory
+whose names begin with <code>test</code>, detected case-insensitively. Within
+each such directory, there should be a script named <code>runtest</code> that
+will run the test and print <code>test passed</code> to the standard output on
+success. The string <code>test passed</code> is detected case-insensitively.</p>
+<p>A test may run the pre-built <strong>lvb</strong> executable indicated by
+<a href="#item_lvb_executable"><code>LVB_EXECUTABLE</code></a>.</p>
+<p>Alternatively, a test may use its own executable. Subdirectories of the
+current directory whose names begin with <code>test_lib</code> are assumed to
+contain tests of this kind. They use an executable called
+<code>testprog.exe</code>, which <strong>go</strong> will build from all <code>.c</code> files in the
+test directory prior to running the test. For building, &lt;go&gt; uses the
+LVB library indicated by <a href="#item_lvb_library"><code>LVB_LIBRARY</code></a>, any other libraries indicated
+by <a href="#item_lvb_otherlibs"><code>LVB_OTHERLIBS</code></a>, the extra header path <a href="#item_lvb_header_path"><code>LVB_HEADER_PATH</code></a> and the
+compiler <a href="#item_cc"><code>CC</code></a> with options given by <a href="#item_cflags"><code>CFLAGS</code></a>. The test itself must
+launch <code>testprog.exe</code> from its <code>runtest</code> script.</p>
+<p>By convention, all tests should endeavour to print a message starting
+with (or consisting of) <code>test failed</code> to the standard output on
+failure, but this is not required. No output, or any output that does
+not match the pattern <code>&quot;test passed&quot;</code>, is regarded as indicating
+failure.</p>
+<p>Tests do not have to remove temporary files. <strong>go</strong> deletes all files
+in the test directory that were not present at the start of the test.</p>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2d_2dtest_testname">--test TESTNAME</a></strong>
+
+<dd>
+<p>Run only the test in the directory named <strong>TESTNAME</strong>. The default is
+to run all tests.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="environment">ENVIRONMENT</a></h1>
+<p>The environment variables below must not contain spaces, with the
+exception that the space in the string ``My Documents'' is allowed.</p>
+<dl>
+<dt><strong><a name="item_lvb_executable">LVB_EXECUTABLE</a></strong>
+
+<dd>
+<p>Must give the filename of the executable to test, including the full
+path.</p>
+</dd>
+</li>
+<dt><strong><a name="item_lvb_library">LVB_LIBRARY</a></strong>
+
+<dd>
+<p>Must give the filename of the LVB library to test, including the full
+path.</p>
+</dd>
+</li>
+<dt><strong><a name="item_lvb_otherlibs">LVB_OTHERLIBS</a></strong>
+
+<dd>
+<p>Must give any non-LVB-specific libraries to be used when building the
+test executable, either as full paths or as compiler options to appear
+at the end of the compiler command line. May be empty or unset. On Unix
+systems, <a href="#item_lvb_otherlibs"><code>LVB_OTHERLIBS</code></a> should usually be set to <code>-lm</code>.</p>
+</dd>
+</li>
+<dt><strong><a name="item_lvb_header_path">LVB_HEADER_PATH</a></strong>
+
+<dd>
+<p>Must give the full path to the directory containing the <code>lvb.h</code> header
+describing the interface to the LVB library specified by
+<a href="#item_lvb_library"><code>LVB_LIBRARY</code></a>.</p>
+</dd>
+</li>
+<dt><strong><a name="item_cc">CC</a></strong>
+
+<dd>
+<p>Must give the name of the C compiler to use when testing the LVB
+library.</p>
+</dd>
+</li>
+<dt><strong><a name="item_cflags">CFLAGS</a></strong>
+
+<dd>
+<p>Must give other the command-line options to use with the compiler
+specified by <a href="#item_cc"><code>CC</code></a>. May be empty or unset.</p>
+</dd>
+</li>
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="exit_status">EXIT STATUS</a></h1>
+<p>0 if all tests pass and there was no error, nonzero otherwise.</p>
+
+</body>
+
+</html>

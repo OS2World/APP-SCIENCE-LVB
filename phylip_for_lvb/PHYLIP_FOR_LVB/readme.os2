@@ -1,0 +1,21 @@
+This is the OS/2 port of LVB, a bioinformatic application.
+I saw this source package somewhere and decided to give it a try under
+GCC 4.5.2 with the Build Environment from Paul Smedley.
+
+For more informations on this program, check the HTML manual.
+
+I included the main program, lvb.exe, in the /exe subdirectory. The
+sources are included here for completeness, but you can delete them.
+
+The PHYLIP_FOR_LVB.zip package contains some programs for XWindows.
+Since currently gcc 4.5.2 can't build X programs, I decided to leave
+this untouched.
+
+If you find this program interesting, please consider making a donation
+to Paul Smedley, whose big work makes it possible for us to continue
+using OS/2 with modern applications.
+
+Have fun!
+Mentore Siesto
+Pisa, Italy
+mentore.siesto@alice.it
